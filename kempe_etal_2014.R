@@ -180,7 +180,7 @@ dev.off()
 
 fig2a_data <- data.frame(N = seq(10,100,10),
                          s = rep(0, 10))
-r_max <- 100  # independent runs per data point
+r_max <- 1500  # independent runs per data point
 counter <- 0
 
 for (i in 1:nrow(fig2a_data)) {
@@ -266,7 +266,7 @@ dev.off()
 
 N_values <- seq(10,100,10)
 a_values <- seq(0.1,0.9,0.1)
-r_max <- 100
+r_max <- 1500
 
 # cols are N values, rows are a values 
 s_matrix <- matrix(0, ncol = length(N_values), nrow = length(a_values))
@@ -318,7 +318,7 @@ fig3_data <- data.frame(m = seq(0,0.5,0.05),
                          S = rep(0, 11),
                          s = rep(0, 11))
 
-r_max <- 100  # independent runs per data point
+r_max <- 2000  # independent runs per data point
 counter <- 0
 
 for (i in 1:nrow(fig3_data)) {
